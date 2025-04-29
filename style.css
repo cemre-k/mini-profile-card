@@ -1,0 +1,80 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+    color:white;
+    background-color: black;
+}
+body.dark .image{
+    border:none ;
+}
+.container{
+    flex-shrink: 1;
+    position: relative;
+    box-sizing: border-box;
+    border:10px solid rgb(162, 167, 175);
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 1px gray;
+}
+.image{
+    border: 2px dashed gray;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{ 
+    width: 130px;
+}
+.bio{
+    margin-top: 35px;
+}
+.bio, .bio p {
+    margin-left: auto;
+    margin-right: auto;    
+    width: fit-content;
+}
+.bio p {
+    font-weight: 900;
+    font-size: 22px;   
+}
+.bio span{
+    font-size: 18px;
+    font-weight: 100;
+    opacity: 0.6;
+}
+button{
+    position: absolute;
+    width: 160px;
+    aspect-ratio: 5/2;
+    bottom: 70px;
+    left:50%;
+    transform: translate(-50%,0);
+    transform-origin: center;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 0 4px 1px rgb(75, 72, 94);
+    font-size: 19px;
+    color:gray;
+    background-color: white;
+}
+button:hover{
+    background-color: gray;
+    color: white;
+}
+button:active{
+    transform-origin: center;
+    transform: translate(-50%,0) scale(0.9)  ;
+    box-shadow: 0 0 20px 1px gray;
+}
